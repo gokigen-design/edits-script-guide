@@ -84,6 +84,10 @@ p+p{margin-top:16px}
 .pending-note{font-size:14px;color:#745F77;margin-top:8px}
 .prep{list-style:none;margin-top:22px;border-top:1px solid var(--line)}
 .prep li{padding:16px 0;border-bottom:1px solid var(--line)}
+.nayami{list-style:none;margin-top:20px;border-top:1px solid var(--line)}
+.nayami li{padding:15px 0 15px 34px;border-bottom:1px solid var(--line);position:relative}
+.nayami li::before{content:"";position:absolute;left:4px;top:24px;width:12px;border-top:2px solid var(--acc)}
+.solution{margin-top:24px;padding:20px;border-left:3px solid var(--acc);background:#fff;color:var(--ink);font-weight:700}
 footer{padding:40px 24px 56px;background:var(--deep);color:#fff;text-align:center;font-size:15px}
 footer small{display:block;font-size:13px;line-height:1.8;margin-top:8px;color:#E8DCE9}
 @media(min-width:768px){body{font-size:17px}.fv{padding:64px 0}.fv h1{font-size:44px}.fv h1 small{font-size:20px}h2{font-size:30px}h3{font-size:20px}section{padding:64px 0}.wrap{padding:0 40px}}
@@ -125,22 +129,13 @@ footer small{display:block;font-size:13px;line-height:1.8;margin-top:8px;color:#
 
 <section class="alt">
   <div class="wrap">
-    <h2>台本表示で、目線はどう変わる？</h2>
-    <p>同じ台本と同じ撮り方で比べると、違いが分かりやすくなります。</p>
-    <div class="compare">
-      <article>
-        <div class="eye-demo off"><span class="lens"></span><span class="look"></span></div>
-        <span class="tag">台本表示なし</span>
-        <h3>目線が横や下へ動く</h3>
-        <p>紙や別の画面を見るたびに、カメラから目線が外れやすくなります。</p>
-      </article>
-      <article>
-        <div class="eye-demo"><span class="lens"></span><span class="look"></span></div>
-        <span class="tag">台本表示あり</span>
-        <h3>目線がカメラの近くに残る</h3>
-        <p>撮影画面の台本を見られるので、カメラの近くへ目線を置きやすくなります。</p>
-      </article>
-    </div>
+    <h2>こんなお悩みありませんか？</h2>
+    <ul class="nayami">
+      <li>台本を見ると、目線が下に落ちる</li>
+      <li>どこまで読んだか分からなくなる</li>
+      <li>話している途中で、言葉が止まる</li>
+    </ul>
+    <p class="solution">Editsの台本表示を使えば、撮影画面を見たまま話せます。台本も声に合わせて進むので、いつも話すような感じで撮りやすくなります。</p>
   </div>
 </section>
 
