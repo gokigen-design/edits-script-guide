@@ -29,6 +29,9 @@ a{color:inherit}
 .hero-sub .eyes{transform:translateX(-50%) rotate(-10deg)}
 .tele{position:absolute;left:10%;right:10%;bottom:8%;background:rgba(55,33,63,.88);color:#fff;font-size:13px;line-height:1.5;padding:8px;text-align:center}
 .hero-label{grid-column:1/-1;font-size:14px;color:#745F77;text-align:center}
+.hero-photo{width:100%;max-width:520px;margin:28px auto 0;background:#fff;border:1px solid rgba(74,42,85,.25);padding:14px}
+.hero-photo img{aspect-ratio:4/5;object-fit:cover;object-position:center}
+.hero-photo figcaption{padding:14px 6px 2px;color:#745F77;font-size:14px;line-height:1.8}
 section{padding:56px 0}
 section.alt{background:var(--soft)}
 h2{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:26px;line-height:1.55;font-weight:700}
@@ -84,7 +87,7 @@ p+p{margin-top:16px}
 footer{padding:40px 24px 56px;background:var(--deep);color:#fff;text-align:center;font-size:15px}
 footer small{display:block;font-size:13px;line-height:1.8;margin-top:8px;color:#E8DCE9}
 @media(min-width:768px){body{font-size:17px}.fv{padding:64px 0}.fv h1{font-size:44px}.fv h1 small{font-size:20px}h2{font-size:30px}h3{font-size:20px}section{padding:64px 0}.wrap{padding:0 40px}}
-@media(max-width:520px){.compare{grid-template-columns:1fr}.compare article+article{border-left:0;border-top:1px solid var(--line)}.hero-visual{grid-template-columns:1fr 76px}}
+@media(max-width:520px){.compare{grid-template-columns:1fr}.compare article+article{border-left:0;border-top:1px solid var(--line)}.hero-visual{grid-template-columns:1fr 76px}.hero-photo{width:92%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -94,11 +97,10 @@ footer small{display:block;font-size:13px;line-height:1.8;margin-top:8px;color:#
   <div class="wrap">
     <h1>台本を見ながら<br>自然に話せる<small>Edits撮影ガイド</small></h1>
     <p>台本を読むと目線がずれる。話し始めると、どこまで読んだか分からなくなる。そんなときに使える撮り方です。</p>
-    <div class="hero-visual" aria-label="台本表示機能ありとなしの目線比較イメージ">
-      <div class="hero-main"><span class="face"></span><span class="eyes"></span><span class="body"></span><span class="tele">話すと台本が<br>下へ進みます</span></div>
-      <div class="hero-sub"><span class="face"></span><span class="eyes"></span><span class="body"></span></div>
-      <p class="hero-label">同じ台本で、目線の違いを比べます</p>
-    </div>
+    <figure class="hero-photo">
+      <img src="media/hero-smartphone-teleprompter.jpg" alt="スマホスタンドに立てたスマホの台本を見ながら話す女性" width="960" height="1200">
+      <figcaption>スマホをスタンドに立て、画面の台本を見ながら話します。</figcaption>
+    </figure>
   </div>
 </header>
 
