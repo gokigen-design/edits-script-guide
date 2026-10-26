@@ -12,9 +12,9 @@
 
 ## 掲載した動画
 
-- `media/01-open-camera.mp4`：＋からカメラを開く
-- `media/02-add-script.mp4`：台本を入力する
-- `media/03-auto-scroll.mp4`：台本を見ながら撮影する
+- `media/01-open-camera-face-covered.mp4`：＋からカメラを開く
+- `media/02-add-script-face-covered.mp4`：台本を入力する
+- `media/03-auto-scroll-face-covered.mp4`：台本を見ながら撮影する
 
 元の画面録画から、必要な操作部分だけを切り出し、音声を削除して掲載している。
 
