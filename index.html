@@ -56,6 +56,17 @@ p+p{margin-top:16px}
 .placeholder svg{width:48px;height:48px;fill:none;stroke:var(--acc);stroke-width:1.6;margin-bottom:14px}
 .placeholder b{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}
 .placeholder small{font-size:14px;line-height:1.8}
+.rows{margin-top:20px;border-top:1px solid var(--line)}
+.row{display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.row img{width:42%;max-width:190px;height:auto;flex:none;border:1px solid var(--line)}
+.row p{margin:0;font-size:16px;line-height:1.8}
+.row p b{display:block;color:var(--ink);font-size:17px}
+.row.full{flex-direction:column;align-items:stretch;gap:10px}
+.row.full img{width:100%;max-width:none}
+.icon{margin:20px 0 0;display:flex;align-items:center;gap:16px}
+.icon img{width:84px;height:auto;flex:none}
+.icon figcaption{font-size:16px}
+.cap{margin-top:10px;font-size:16px}
 .shot{margin-top:20px;border:1px solid var(--line);background:#fff}
 .shot figcaption{padding:10px 14px;border-top:1px solid var(--line);font-size:14px;color:#745F77}
 .mini-steps{list-style:none;margin-top:16px;border-top:1px solid var(--line)}
@@ -143,27 +154,12 @@ footer small{display:block;font-size:13px;line-height:1.8;margin-top:8px;color:#
   <div class="wrap">
     <div class="step-head"><span class="step-no">01</span><h2>カメラを開く</h2></div>
     <p>Editsを開いたら、＋を押します。続けてカメラを選び、スマホで撮影できる画面を開きます。</p>
-    <ol class="mini-steps">
-      <li><span>1</span><b>Editsを開く</b>撮影に使うスマホでアプリを開きます。</li>
-      <li><span>2</span><b>＋を押す</b>新しく作る画面へ進みます。</li>
-      <li><span>3</span><b>カメラを選ぶ</b>自分が映る撮影画面に切り替えます。</li>
-    </ol>
-    <figure class="shot" style="max-width:200px">
-      <img src="media/edits-00-icon.jpg" alt="Editsのアプリのアイコン" width="303" height="341" loading="lazy">
-      <figcaption>このアイコンのアプリです。</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="media/edits-01-plus.jpg" alt="Editsのプロジェクト一覧。右下の＋ボタンに赤い丸" width="720" height="1473" loading="lazy">
-      <figcaption>1. 右下の＋を押します。</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="media/edits-02-camera.jpg" alt="＋を押すと出るメニュー。カメラに赤い枠" width="720" height="1001" loading="lazy">
-      <figcaption>2. 出てきたメニューから「カメラ」を選びます。</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="media/edits-03-teleprompter.jpg" alt="カメラ画面。左の列のテレプロンプターのアイコンに赤い丸" width="720" height="1270" loading="lazy">
-      <figcaption>3. 撮影画面の左にあるテレプロンプターのアイコンを押すと、台本の欄が出ます。</figcaption>
-    </figure>
+    <figure class="icon"><img src="media/edits-00-icon.jpg" alt="Editsのアプリのアイコン" width="303" height="341" loading="lazy"><figcaption>このアイコンのアプリを開きます。</figcaption></figure>
+    <div class="rows">
+      <div class="row"><img src="media/edits-01-plus.jpg" alt="＋を押すの画面" width="600" height="643" loading="lazy"><p><b>1 ＋を押す</b>右下の＋をタップします。</p></div>
+      <div class="row"><img src="media/edits-02-camera.jpg" alt="カメラを選ぶの画面" width="600" height="531" loading="lazy"><p><b>2 カメラを選ぶ</b>出てきたメニューの「カメラ」をタップします。</p></div>
+      <div class="row"><img src="media/edits-03-teleprompter.jpg" alt="台本のアイコンを押すの画面" width="600" height="455" loading="lazy"><p><b>3 台本のアイコンを押す</b>左にあるテレプロンプターのアイコンをタップします。</p></div>
+    </div>
   </div>
 </section>
 
@@ -171,14 +167,10 @@ footer small{display:block;font-size:13px;line-height:1.8;margin-top:8px;color:#
   <div class="wrap">
     <div class="step-head"><span class="step-no">02</span><h2>台本を画面に出す</h2></div>
     <p>撮影画面で台本を表示する機能を開きます。話したい文章を貼り付けたら、読みやすい位置と大きさに整えます。</p>
-    <figure class="shot">
-      <img src="media/edits-04-script-box.jpg" alt="画面の上に出た台本の欄。赤い枠" width="720" height="1258" loading="lazy">
-      <figcaption>台本の欄が上に出ます。この欄をタップして文章を入れます。</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="media/edits-05-paste.jpg" alt="台本を入力する画面。赤い枠の中に文章を貼り付ける" width="720" height="1490" loading="lazy">
-      <figcaption>「ここにスクリプトを追加してください」の欄に、話したい文章を貼り付けます。終わったら右上の「完了」を押します。</figcaption>
-    </figure>
+    <div class="rows">
+      <div class="row full"><img src="media/edits-04-script-box.jpg" alt="台本の欄をタップの画面" width="600" height="335" loading="lazy"><p><b>1 台本の欄をタップ</b>上に出た欄をタップして、文章を入れる画面を開きます。</p></div>
+      <div class="row full"><img src="media/edits-05-paste.jpg" alt="文章を貼り付けるの画面" width="600" height="275" loading="lazy"><p><b>2 文章を貼り付ける</b>話したい文章を貼り付けて、右上の「完了」を押します。</p></div>
+    </div>
     <div class="note"><b>台本は短い行に分けておく</b>一文が長いと、目線が左右へ大きく動きます。息つぎをする場所で改行すると読みやすくなります。</div>
   </div>
 </section>
@@ -187,10 +179,8 @@ footer small{display:block;font-size:13px;line-height:1.8;margin-top:8px;color:#
   <div class="wrap">
     <div class="step-head"><span class="step-no">03</span><h2>台本を見ながら話す</h2></div>
     <p>撮影を始めたら、いつもの速さで話します。話したところに合わせて台本が下へ進むので、そのまま続けられます。</p>
-    <figure class="shot">
-      <img src="media/edits-06-scroll.jpg" alt="撮影中の画面。上の台本が話すのに合わせて進んでいる" width="720" height="372" loading="lazy">
-      <figcaption>撮影を始めると、台本が話すのに合わせて下へ進みます。画面を見たまま話せます。</figcaption>
-    </figure>
+      <div class="row full"><img src="media/edits-06-scroll.jpg" alt="撮影中の台本の画面" width="600" height="310" loading="lazy"></div>
+    <p class="cap">撮影を始めると、台本が話すのに合わせて下へ進みます。</p>
     <div class="note"><b>最初から完璧に読まなくて大丈夫です</b>言い直したところは、あとで切れます。まずは目線をカメラの近くに置くことを優先します。</div>
   </div>
 </section>
